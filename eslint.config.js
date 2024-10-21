@@ -25,6 +25,7 @@ export default tseslint.config(
       ],
       '@typescript-eslint/explicit-function-return-type': 'error',
       'no-console': 'error',
+      'arrow-body-style': 'warn',
     },
   }
 );
