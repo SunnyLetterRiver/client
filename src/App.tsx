@@ -1,7 +1,8 @@
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import { LatLngTuple } from "leaflet";
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import { LatLngTuple } from 'leaflet';
+import { ReactElement } from 'react';
 
-function App() {
+export const App = (): ReactElement => {
   const position: LatLngTuple = [51.505, -0.09];
 
   return (
@@ -9,7 +10,7 @@ function App() {
       center={position}
       zoom={13}
       scrollWheelZoom={false}
-      style={{ width: "100%", height: "100vh" }}
+      style={{ width: '100%', height: '100vh' }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -22,6 +23,4 @@ function App() {
       </Marker>
     </MapContainer>
   );
-}
-
-export default App;
+};
